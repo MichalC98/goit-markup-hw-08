@@ -1,0 +1,98 @@
+.footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    color: $white;
+    background-color: $background-color;
+}
+
+.footer__flex {
+    display: flex;
+}
+
+.footer__flex-grup {
+    margin-right: 70px;
+
+    &:last-child {
+        margin-right: 0px;
+    }
+}
+
+
+
+.footer__address {
+    margin-bottom: 9px;
+    
+    &:first-child {
+        margin-top: 20px;
+    }
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.footer__title {
+    padding-top: 10px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16.41px;
+    letter-spacing: 0.03em;
+    
+    &--signup {
+        margin-bottom: 20px;  
+    }
+}
+
+.company-socials {
+    display: flex;
+}
+
+.company-socials__list {
+    margin-right: 10px;
+
+    &:last-child {
+            margin-right: 0px;
+        }
+}
+
+.company-socials__svg {
+    box-sizing: content-box;
+    height: 20px;
+    width: 20px;
+    fill: $white;
+}
+
+.company-socials__svg-background {
+    display: flex;
+    padding: 12px;
+    background-color: $footer-ellipse;
+    border-radius: 50%;
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+        background-color: $main-blue;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+}
+
+
+.newsletter {
+    display: flex;
+    flex-direction: row;
+}
+
+.newsletter__imputbox {
+    height: 50px;
+    width: 358px;
+    border: 1px solid $newsletter-fading;
+    border-radius: 4px;
+    background: none;
+    color: $white;
+    padding-left: 16px;
+    
+    &:not(:placeholder-shown):invalid {
+        border-color: red;
+    }
+}
+

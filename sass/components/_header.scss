@@ -1,0 +1,45 @@
+.header {
+    padding: 18px 15px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid $hedder-border;
+}
+
+.header__link {
+    text-decoration: none;
+}
+
+.header__nav-grup {
+
+    &-1 {
+        display: flex;
+        align-items: center;
+        padding: 0;
+        margin-left: 93px;
+    }
+    &-2 {
+        display: flex;
+        align-items: center;
+        padding: 0;
+        margin-left: auto;
+    }
+}
+
+.header__navigation {
+    margin-right: 46px;
+    position: relative;
+
+    &:last-child {
+        margin-right: 0px;
+    }
+}
+
+.header__contacts {
+    margin-right: 30px;
+
+    &:last-child {
+        margin-right: 0px;
+    }
+}
+
+

@@ -1,0 +1,257 @@
+// SECTION 1
+
+
+.service {
+    padding-top: 106px;
+    padding-bottom: 106px;
+    color: $white;
+    background-size: cover;
+    background-position: center center;
+    background-image: url("../images/img-background-sec-1.jpg"), url("../images/img-background-overlay-sec-1.png");
+    background-color: $background-color;
+}
+
+.service__flex {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.service__headline {
+    font-weight: 900;
+    font-size: 44px;
+    letter-spacing: 0.06em;
+    line-height: 60px;
+    text-align: center;
+}
+
+
+// SECTION 2
+
+
+.sec-2 {
+    display: flex;
+}
+
+.sec-2__image {
+    box-sizing: content-box;
+    height: 70px;
+    width: 70px;
+    padding: 25px 100px;
+    background: $light-grey;
+    margin-bottom: 30px;
+}
+
+.sec-2__head {
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    line-height: 16px;
+    text-transform: uppercase;
+    color: $lighter-black;
+    margin-bottom: 10px;
+}
+
+.sec-2__text {
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.03em;
+    line-height: 24px;
+    color: $fade-on-white;
+}
+
+// SECTION 3
+
+
+.offer {
+    display: flex;
+    margin-top: 50px;
+}
+
+.offer__headline {
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    line-height: 42px;
+    text-align: center;
+    color: $lighter-black;
+}
+
+
+.offer__grup {
+    margin-left: 50px;
+    
+    &:first-child {
+        margin-left: 0px;
+    }
+}
+
+.signed-foto {
+    position: relative;
+    justify-content: center;
+    text-align: center;
+    height: 294px;
+    width: 370px;
+}
+
+.signed-foto__text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16.41px;
+    letter-spacing: 0.03em;
+    color: $white;
+    background-color: $sec-3-img-text-back;
+    padding-top: 27px;
+}
+
+// SECTION 4
+
+.employees {
+    background-color: $light-grey;
+}
+
+.employees__headline {
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    line-height: 42px;
+    text-align: center;
+    color: $lighter-black;
+}
+
+.employees__flex {
+    display: flex;
+    margin-top: 50px;
+}
+
+.employees__grup {
+    margin-left: 30px;
+    
+    &:first-child {
+        margin-left: 0px;
+    }
+}
+
+
+.member-card {
+    background: $white;
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 1px 3px $material-shadow-0_12,
+        0px 1px 1px $material-shadow-0_14,
+        0px 2px 1px $material-shadow-0_20;
+}
+
+.member-card__name {
+    color: $lighter-black;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.03em;
+    line-height: 18.75px;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    margin: 0;
+}
+
+.member-card__position {
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.03em;
+    line-height: 18.75px;
+    color: $fade-on-white;
+    text-align: center;
+    padding-bottom: 16px;
+    margin: 0;
+}
+
+.member-card__flex {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 30px;
+}
+
+.member-card__grup {
+    margin-right: 10px;
+    
+    &:last-child {
+        margin-right: 0px;
+    }
+}
+
+.member-card__svg {
+    box-sizing: content-box;
+    height: 20px;
+    width: 20px;
+}
+
+.member-card__svg-background {
+    display: flex;
+    padding: 12px;
+    background-color: $white;
+    border-radius: 50%;
+    fill: $social-svg-color-on-wight;
+    cursor: pointer;
+    
+    &:hover,
+    &:focus {
+        fill: $white;
+        background-color: $main-blue;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+}
+
+
+// SECTION 5
+
+
+.clients {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.clients__headline {
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    line-height: 42px;
+    text-align: center;
+    color: $lighter-black;
+}
+
+.clients__flex {
+    display: flex;
+    margin-top: 50px;
+}
+
+.clients__grup {
+    margin-right: 30px;
+    
+    &:last-child {
+        margin-right: 0px;
+    }
+}
+
+.clients__logo {
+    box-sizing: border-box;
+    fill: $social-svg-color-on-wight;
+    height: 92px;
+    width: 170px;
+    padding: 16px 32px;
+    border: 1px solid $social-svg-color-on-wight;
+    border-radius: 4px;
+    cursor: pointer;
+    
+    &:hover,
+    &:focus {
+        fill: $main-blue;
+        border-color: $main-blue;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+}

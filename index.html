@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="description" content="zad 1 goit" />
+  <title>WebStudio</title>
+  <link rel="stylesheet" href="./css/modern-normalize.min.css" />
+  <link rel="stylesheet" href="./css/main.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+    rel="stylesheet">
+</head>
+
+
+<body>
+  <header class="container header">
+    <a class="header__link" href="./">
+      <span class="logo logo--black"><span class="logo--blue">Web</span>Studio</span>
+    </a>
+    <nav>
+      <ul class="header__nav-grup-1">
+        <li class="header__navigation"><a
+            class="navigation navigation--black navigation__underline navigation__underline--active"
+            href="./">Agencja</a>
+        </li>
+        <li class="header__navigation"><a class="navigation navigation--black navigation__underline"
+            href="./portfolio.html">Portfolio</a>
+        </li>
+        <li class="header__navigation"><a class="navigation navigation--black navigation__underline" href="">Kontakt</a>
+        </li>
+      </ul>
+    </nav>
+    <ul class="header__nav-grup-2">
+      <li class="header__contacts">
+        <a class="navigation navigation--grey" href="mailto:info@devstudio.com" rel="noreferrer noopener">
+          <svg class="header__svg-mail">
+            <use href="./images/symbol-defs.svg#icon-envelope"></use>
+          </svg>info@devstudio.com</a>
+      </li>
+      <li class="header__contacts">
+        <a class="navigation navigation--grey" href="tel:+48111111111" rel="noreferrer noopener"><svg
+            class="header__svg-phone">
+            <use href="./images/symbol-defs.svg#icon-smartphone"></use>
+          </svg>+48 111 111 111</a>
+      </li>
+    </ul>
+  </header>
+
+
+  <main>
+    <section class="service">
+      <div class="container container--strech">
+        <div class="service__flex">
+          <h1 class="service__headline">EFEKTYWNE ROZWIĄZANIA <br />DLA WASZEGO BIZNESU</h1>
+          <button class="service__button button" type="button" data-modal-open>Zamów usługę</button>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="container container--strech-up">
+      <ul class="sec-2">
+        <li>
+          <svg class="sec-2__image">
+            <use href="./images/symbol-defs.svg#icon-antenna"></use>
+          </svg>
+          <p class="sec-2__head">LOREM IPSUM</p>
+          <p class="sec-2__text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
+            arcu sem. Sed non sodales dui. Interdum et malesuada
+          </p>
+        </li>
+        <li>
+          <svg class="sec-2__image">
+            <use href="./images/symbol-defs.svg#icon-astronaut"></use>
+          </svg>
+          <p class="sec-2__head">LOREM IPSUM</p>
+          <p class="sec-2__text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
+            arcu sem. Sed non sodales dui. Interdum et malesuada
+          </p>
+        </li>
+        <li>
+          <svg class="sec-2__image">
+            <use href="./images/symbol-defs.svg#icon-clock"></use>
+          </svg>
+          <p class="sec-2__head">LOREM IPSUM</p>
+          <p class="sec-2__text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
+            arcu sem. Sed non sodales dui. Interdum et malesuada
+          </p>
+        </li>
+        <li>
+          <svg class="sec-2__image">
+            <use href="./images/symbol-defs.svg#icon-diagram"></use>
+          </svg>
+          <p class="sec-2__head">LOREM IPSUM</p>
+          <p class="sec-2__text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
+            arcu sem. Sed non sodales dui. Interdum et malesuada
+          </p>
+        </li>
+      </ul>
+    </section>
+
+
+    <section class="container container--strech">
+      <p class="offer__headline">Czym się zajmujemy</p>
+      <ul class="offer">
+        <li class="offer__grup">
+          <div class="signed-foto">
+            <img src="./images/thing1.jpg" alt="pisanie kodu programu" width="370" height="294" />
+            <p class="signed-foto__text">APLIKACJE KOMPUTEROWE</p>
+          </div>
+        </li>
+        <li class="offer__grup">
+          <div class="signed-foto">
+            <img src="./images/thing2.jpg" alt="testowanie aplikacji" width="370" height="294" />
+            <p class="signed-foto__text">APLIKACJE MOBILNE</p>
+          </div>
+        </li>
+        <li class="offer__grup">
+          <div class="signed-foto">
+            <img src="./images/thing3.jpg" alt="projektowanie strony" width="370" height="294" />
+            <p class="signed-foto__text">ROZWIĄZANIA GRAFICZNE</p>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+
+    <section class="employees">
+      <div class="container container--strech">
+        <p class="employees__headline">Nasz zespół</p>
+        <ul class="employees__flex">
+          <li class="employees__grup">
+            <figure class="member-card">
+              <img src="./images/person1.jpg" alt="brodaty mężczyzna" width="270" height="260" />
+              <figcaption>
+                <p class="member-card__name">Jon Doe</p>
+                <p class="member-card__position">Product designer</p>
+                <ul class="member-card__flex">
+                  <li class="member-card__grup">
+                    <a href="./" rel="noreferrer noopener" class="member-card__svg-background"><svg
+                        class="member-card__svg">
+                        <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                      </svg></a>
+                  </li>
+                  <li class="member-card__grup">
+                    <a href="./" rel="noreferrer noopener" class="member-card__svg-background"><svg
+                        class="member-card__svg">
+                        <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                      </svg></a>
+                  </li>
+                  <li class="member-card__grup">
+                    <a href="./" rel="noreferrer noopener" class="member-card__svg-background"><svg
+                        class="member-card__svg">
+                        <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                      </svg></a>
+                  </li>
+                  <li class="member-card__grup">
+                    <a href="./" rel="noreferrer noopener" class="member-card__svg-background"><svg
+                        class="member-card__svg">
+                        <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                      </svg></a>
+                  </li>
+                </ul>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="employees__grup">
+            <figure class="member-card">
+              <img src="./images/person2.jpg" alt="kobieta" width="270" height="260" />
+              <figcaption>
+                <p class="member-card__name">Jon Doe</p>
+                <p class="member-card__position">Frontend Developer</p>
+                <ul class="member-card__flex">
+                  <li class="member-card__grup">
+                    <a href="./" rel="noreferrer noopener" class="member-card__svg-background"><svg
+                        class="member-card__svg">
+                        <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                      </svg></a>
+                  </li>
+                  <li class="member-card__grup">
+                    <a href="./" rel="noreferrer noopener" class="member-card__svg-background"><svg
+                        class="member-card__svg">
+                        <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                      </svg></a>
+                  </li>
+                  <li class="member-card__grup">
+                    <a href="./" rel="noreferrer noopener" class="member-card__svg-background"><svg
+                        class="member-card__svg">
+                        <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                      </svg></a>
+                  </li>
+                  <li class="member-card__grup">
+                    <a href="./" rel="noreferrer noopener" class="member-card__svg-background"><svg
+                        class="member-card__svg">
+                        <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                      </svg></a>
+                  </li>
+                </ul>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="employees__grup">
+            <figure class="member-card">
+              <img src="./images/person3.jpg" alt="mężczyzna" width="270" height="260" />
+              <figcaption>
+                <p class="member-card__name">Jon Doe</p>
+                <p class="member-card__position">Marketing</p>
+                <ul class="member-card__flex">
+                  <li class="member-card__grup">
+                    <a href="./" rel="noreferrer noopener" class="member-card__svg-background"><svg
+                        class="member-card__svg">
+                        <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                      </svg></a>
+                  </li>
+                  <li class="member-card__grup">
+                    <a href="./" rel="noreferrer noopener" class="member-card__svg-background"><svg
+                        class="member-card__svg">
+                        <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                      </svg></a>
+                  </li>
+                  <li class="member-card__grup">
+                    <a href="./" rel="noreferrer noopener" class="member-card__svg-background"><svg
+                        class="member-card__svg">
+                        <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                      </svg></a>
+                  </li>
+                  <li class="member-card__grup">
+                    <a href="./" rel="noreferrer noopener" class="member-card__svg-background"><svg
+                        class="member-card__svg">
+                        <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                      </svg></a>
+                  </li>
+                </ul>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="employees__grup">
+            <figure class="member-card">
+              <img src="./images/person4.jpg" alt="brodaty mężczyzna z tatuażem" width="270" height="260" />
+              <figcaption>
+                <p class="member-card__name">Jon Doe</p>
+                <p class="member-card__position">UI Designer</p>
+                <ul class="member-card__flex">
+                  <li class="member-card__grup">
+                    <a href="./" rel="noreferrer noopener" class="member-card__svg-background"><svg
+                        class="member-card__svg">
+                        <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                      </svg></a>
+                  </li>
+                  <li class="member-card__grup">
+                    <a href="./" rel="noreferrer noopener" class="member-card__svg-background"><svg
+                        class="member-card__svg">
+                        <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                      </svg></a>
+                  </li>
+                  <li class="member-card__grup">
+                    <a href="./" rel="noreferrer noopener" class="member-card__svg-background"><svg
+                        class="member-card__svg">
+                        <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                      </svg></a>
+                  </li>
+                  <li class="member-card__grup">
+                    <a href="./" rel="noreferrer noopener" class="member-card__svg-background"><svg
+                        class="member-card__svg">
+                        <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                      </svg></a>
+                  </li>
+                </ul>
+              </figcaption>
+            </figure>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+
+    <section class="container">
+      <div class="clients">
+        <p class="clients__headline">Nasi klienci</p>
+        <ul class="clients__flex">
+          <li class="clients__grup">
+            <svg tabindex="0" class="clients__logo">
+              <use href="./images/symbol-defs.svg#icon-logo-1">
+              </use>
+            </svg>
+          </li>
+          <li class="clients__grup">
+            <svg tabindex="0" class="clients__logo">
+              <use href="./images/symbol-defs.svg#icon-logo-2">
+              </use>
+            </svg>
+          </li>
+          <li class="clients__grup">
+            <svg tabindex="0" class="clients__logo">
+              <use href="./images/symbol-defs.svg#icon-logo-3">
+              </use>
+            </svg>
+          </li>
+          <li class="clients__grup">
+            <svg tabindex="0" class="clients__logo">
+              <use href="./images/symbol-defs.svg#icon-logo-4">
+              </use>
+            </svg>
+          </li>
+          <li class="clients__grup">
+            <svg tabindex="0" class="clients__logo">
+              <use href="./images/symbol-defs.svg#icon-logo-5">
+              </use>
+            </svg>
+          </li>
+          <li class="clients__grup">
+            <svg tabindex="0" class="clients__logo">
+              <use href="./images/symbol-defs.svg#icon-logo-6">
+              </use>
+            </svg>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+
+  <footer class="footer">
+    <div class="container footer__flex">
+      <div class="footer__flex-grup">
+        <span class="logo logo--white"><span class="logo--blue">Web</span>Studio</span>
+        <address>
+          <p class="footer__address address-white">m. Warszawa, Aleje Jerozolimskie 21</p>
+          <p class="footer__address"><a class="address-gray" href="mailto:info@example.com"
+              rel="noreferrer noopener">info@example.com
+            </a>
+          </p>
+          <p class="footer__address"><a class="address-gray" href="tel:+48111111111" rel="noreferrer noopener">+48 111
+              111 111</a>
+          </p>
+        </address>
+      </div>
+      <div class="footer__flex-grup">
+        <p class="footer__title">DOŁĄCZ DO NAS</p>
+        <ul class="company-socials">
+          <li class="company-socials__list">
+            <a href="./" rel="noreferrer noopener" class="company-socials__svg-background"><svg
+                class="company-socials__svg">
+                <use href="./images/symbol-defs.svg#icon-instagram"></use>
+              </svg></a>
+          </li>
+          <li class="company-socials__list">
+            <a href="./" rel="noreferrer noopener" class="company-socials__svg-background"><svg
+                class="company-socials__svg">
+                <use href="./images/symbol-defs.svg#icon-twitter"></use>
+              </svg></a>
+          </li>
+          <li class="company-socials__list">
+            <a href="./" rel="noreferrer noopener" class="company-socials__svg-background"><svg
+                class="company-socials__svg">
+                <use href="./images/symbol-defs.svg#icon-facebook"></use>
+              </svg></a>
+          </li>
+          <li class="company-socials__list">
+            <a href="./" rel="noreferrer noopener" class="company-socials__svg-background"><svg
+                class="company-socials__svg">
+                <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+              </svg></a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__flex-grup">
+        <p class="footer__title--signup">ZAPISZ SIĘ DO NEWSLETTERA</p>
+        <form name="newsletter_signup" autocomplete="on" novalidate class="newsletter">
+          <label>
+            <input type="email" name="email" placeholder="E-mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+              class="newsletter__imputbox" />
+          </label>
+          <button type="submit" class="newsletter__button button">Zapisz się <svg class="newsletter__button-svg">
+              <use href="./images/symbol-defs.svg#icon-send-form"></use>
+            </svg></button>
+        </form>
+      </div>
+    </div>
+  </footer>
+
+
+  <div class="backdrop modal__hidden" data-modal>
+    <div class="modal">
+      <button type="button" class="modal__x-button" data-modal-close>
+        <svg class="modal__x-symbol">
+          <use class="" href="./images/symbol-defs.svg#icon-close-symbol"></use>
+        </svg>
+      </button>
+
+      <p class="modal__title">Zostaw swoje dane w formularzu poniżej</p>
+      <form class="modal__flex">
+
+        <label class="imput__subtitle">Imie
+          <input type="text" name="name" class="imput" placeholder="" />
+          <svg class="imput__svg">
+            <use href="./images/symbol-defs.svg#icon-person-form"></use>
+          </svg>
+        </label>
+
+        <label class="imput__subtitle">Telefon
+          <input type="tel" name="phone" class="imput" />
+          <svg class="imput__svg">
+            <use href="./images/symbol-defs.svg#icon-phone-form"></use>
+          </svg>
+        </label>
+
+        <label class="imput__subtitle">Email
+          <input type="email" name="email" class="imput" />
+          <svg class="imput__svg">
+            <use href="./images/symbol-defs.svg#icon-email-form"></use>
+          </svg>
+        </label>
+
+        <label class="imput__subtitle">Komentarz
+          <textarea name="coment" placeholder="Wprowadź tekst" class="imput__textbox"></textarea>
+        </label>
+
+        <div class="checkbox">
+          <div class="checkbox__hidden">
+            <input type="checkbox" name="consent" id="rule-checkbox" required class="checkbox__body" />
+            <label for="rule-checkbox" class="checkbox__label">
+              <svg class="checkbox__svg">
+                <use href="./images/symbol-defs.svg#icon-checkmark"></use>
+              </svg>
+            </label>
+          </div>
+          <p class="rules">Oświadczam iż przeczytałem<a class="rules__link" href="#">Regulamin</a>i<a
+              class="rules__link" href="#">Politykę Prywatności.</a></p>
+        </div>
+
+        <button type="submit" class="modal__button button">Wyślij</button>
+
+      </form>
+    </div>
+  </div>
+
+  <script src="./js/modal.js"></script>
+
+</body>
+
+</html>

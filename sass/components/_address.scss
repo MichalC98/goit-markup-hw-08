@@ -1,0 +1,22 @@
+.address-white {
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.03em;
+    line-height: 24px;
+}
+
+.address-gray {
+    color: $fade-on-black;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.03em;
+    line-height: 24px;
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+        color: $white;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+}
