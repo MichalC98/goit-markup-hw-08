@@ -2,13 +2,30 @@
 
 
 .service {
-    padding-top: 106px;
-    padding-bottom: 106px;
+    padding-top: 24px;
+    padding-bottom: 24px;
     color: $white;
+    background-image: url("../images/img-background-sec-1.jpg"), url("../images/img-background-overlay-sec-1.png");
     background-size: cover;
     background-position: center center;
-    background-image: url("../images/img-background-sec-1.jpg"), url("../images/img-background-overlay-sec-1.png");
     background-color: $background-color;
+    max-height: 400;
+    width: auto;
+}
+@media (min-width: 1200px) {
+    .service {
+        padding-top: 106px;
+        padding-bottom: 106px;
+    }
+}
+
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .service {
+        background-image: url("../images/img-background-sec-1@2x.jpg"),
+            url("../images/img-background-overlay-sec-1.png");
+    }
 }
 
 .service__flex {
@@ -19,10 +36,16 @@
 
 .service__headline {
     font-weight: 900;
-    font-size: 44px;
-    letter-spacing: 0.06em;
-    line-height: 60px;
+    font-size: 26px;
+    line-height: 42px;
     text-align: center;
+    letter-spacing: 0.06em;
+}
+@media (min-width: 1200px) {
+    .service__headline {
+        font-size: 44px;
+        line-height: 60px;
+    }
 }
 
 
@@ -31,6 +54,40 @@
 
 .sec-2 {
     display: flex;
+    flex-direction: column;
+}
+@media (min-width: 768px) {
+    .sec-2 {
+        flex-direction: row;
+        justify-content: space-between; 
+    }
+}
+@media (min-width: 1200px) {
+}
+
+
+
+.sec-2__box {
+    height: 226px;
+    width: 450px;
+    margin-bottom: 30px;
+    
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+@media (min-width: 768px) {
+    .sec-2__box {
+        height: 251px;
+        width: 354px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .sec-2__box {
+        height: 251px;
+        width: 270px;
+    }
 }
 
 .sec-2__image {
@@ -41,6 +98,7 @@
     background: $light-grey;
     margin-bottom: 30px;
 }
+
 
 .sec-2__head {
     font-size: 14px;
@@ -58,6 +116,14 @@
     letter-spacing: 0.03em;
     line-height: 24px;
     color: $fade-on-white;
+
+}
+@media (min-width: 768px) {}
+
+@media (min-width: 1200px) {
+    .sec-2__text {
+        margin-bottom: 0;
+    }
 }
 
 // SECTION 3

@@ -20,6 +20,12 @@ p {
     margin: 0;
 }
 
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
 .container {
     max-width: 480px;
     margin: 0 auto;
@@ -42,7 +48,7 @@ p {
 .container--strech-up {
     padding-top: 94px;
 }
-
+    
 @import "./utils/variables";
 @import "./components/logo";
 @import "./components/header";
@@ -60,5 +66,4 @@ p {
 
 
 @media (min-width: 768px) {}
-
 @media (min-width: 1200px) {}

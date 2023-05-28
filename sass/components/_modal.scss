@@ -11,13 +11,19 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 528px;
-    height: 581px;
+    width: 450px;
+    height: 609px;
     padding: 40px;
     transform: translate(-50%, -50%);
     background-color: $white;
     box-shadow: 0px 1px 3px $material-shadow-0_12, 0px 1px 1px $material-shadow-0_14, 0px 2px 1px $material-shadow-0_20;
     border-radius: 4px;
+}
+@media (min-width: 1200px) {
+    .modal{
+        width: 528px;
+        height: 581px;
+    }
 }
 
 .modal__hidden {
@@ -29,13 +35,17 @@
 .modal__title {
     font-weight: 700;
     font-size: 20px;
-    line-height: 23px;
+    line-height: 30px;
     letter-spacing: 0, 03em;
     text-align: center;
     color: $lighter-black;
     margin-bottom: 12px;
 }
-
+@media (min-width: 1200px) {
+    .modal__title {
+        line-height: 23px;
+    }
+}
 .modal__flex {
     display: flex;
     flex-direction: column;
@@ -94,23 +104,6 @@
     }
 }
 
-.modal__button {
-    cursor: pointer;
-    height: 50px;
-    width: 200px;
-    border: none;
-    color: $white;
-    background-color: $main-blue;
-    border-radius: 4px;
-    margin-left: 124px;
-    box-shadow: 0px 1px 3px $material-shadow-0_12, 0px 1px 1px $material-shadow-0_14, 0px 2px 1px $material-shadow-0_20;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 30px;
-    letter-spacing: 0.06em;
-}
-
-
 .checkbox {
     display: flex;
     margin-bottom: 30px;
@@ -160,17 +153,23 @@
 .rules {
     display: flex;
     font-weight: 400;
-    font-size: 14px;
-    color: $fade-on-white;
+    font-size: 12px;
+    line-height: 14.06px;
     letter-spacing: 0.03em;
-    line-height: 24px;
-    padding-left: 10px;
+    color: $fade-on-white;
+    margin-left: 8px;
+}
+@media (min-width: 1200px) {
+    .rules {
+        font-size: 14px;
+        line-height: 24px;
+        margin-left: 10px;
+    }
 }
 
 .rules__link {
     display: flex;
     color: $main-blue;
     text-decoration: underline;
-    padding-left: 4px;
-    padding-right: 3px;
+
 }
