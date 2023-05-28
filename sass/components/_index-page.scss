@@ -94,9 +94,19 @@
     box-sizing: content-box;
     height: 70px;
     width: 70px;
-    padding: 25px 100px;
+    padding: 25px 190px;
     background: $light-grey;
     margin-bottom: 30px;
+}
+@media (min-width: 768px) {
+    .sec-2__image {
+        padding: 25px 142px;
+    }
+}
+@media (min-width: 1200px) {
+    .sec-2__image {
+        padding: 25px 100px;
+    }
 }
 
 
