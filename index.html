@@ -158,29 +158,30 @@
     </section>
 
 
-    <!-- 
-    <section class="container container--strech">
-      <p class="offer__headline">Czym się zajmujemy</p>
-      <ul class="offer">
-        <li class="offer__grup">
-          <div class="signed-foto">
-            <img src="./images/thing1.jpg" alt="pisanie kodu programu" width="370" height="294" />
-            <p class="signed-foto__text">APLIKACJE KOMPUTEROWE</p>
-          </div>
-        </li>
-        <li class="offer__grup">
-          <div class="signed-foto">
-            <img src="./images/thing2.jpg" alt="testowanie aplikacji" width="370" height="294" />
-            <p class="signed-foto__text">APLIKACJE MOBILNE</p>
-          </div>
-        </li>
-        <li class="offer__grup">
-          <div class="signed-foto">
-            <img src="./images/thing3.jpg" alt="projektowanie strony" width="370" height="294" />
-            <p class="signed-foto__text">ROZWIĄZANIA GRAFICZNE</p>
-          </div>
-        </li>
-      </ul>
+    <section class="offer__mobile">
+      <div class="container container--strech">
+        <p class=" offer__headline">Czym się zajmujemy</p>
+        <ul class="offer">
+          <li class="offer__grup">
+            <div class="signed-foto">
+              <img src="./images/thing1.jpg" alt="pisanie kodu programu" width="370" height="294" />
+              <p class="signed-foto__text">APLIKACJE KOMPUTEROWE</p>
+            </div>
+          </li>
+          <li class="offer__grup">
+            <div class="signed-foto">
+              <img src="./images/thing2.jpg" alt="testowanie aplikacji" width="370" height="294" />
+              <p class="signed-foto__text">APLIKACJE MOBILNE</p>
+            </div>
+          </li>
+          <li class="offer__grup">
+            <div class="signed-foto">
+              <img src="./images/thing3.jpg" alt="projektowanie strony" width="370" height="294" />
+              <p class="signed-foto__text">ROZWIĄZANIA GRAFICZNE</p>
+            </div>
+          </li>
+        </ul>
+      </div>
     </section>
 
 
@@ -190,7 +191,8 @@
         <ul class="employees__flex">
           <li class="employees__grup">
             <figure class="member-card">
-              <img src="./images/person1.jpg" alt="brodaty mężczyzna" width="270" height="260" />
+              <img srcset="./images/person1.jpg 1x,./images/person1@2x.jpg 2x" src="./images/person1.jpg"
+                alt="brodaty mężczyzna" class="member-card__foto" />
               <figcaption>
                 <p class="member-card__name">Jon Doe</p>
                 <p class="member-card__position">Product designer</p>
@@ -225,7 +227,8 @@
           </li>
           <li class="employees__grup">
             <figure class="member-card">
-              <img src="./images/person2.jpg" alt="kobieta" width="270" height="260" />
+              <img srcset="./images/person2.jpg 1x,./images/person2@2x.jpg 2x" src="./images/person2.jpg" alt="kobieta"
+                class="member-card__foto" />
               <figcaption>
                 <p class="member-card__name">Jon Doe</p>
                 <p class="member-card__position">Frontend Developer</p>
@@ -260,7 +263,8 @@
           </li>
           <li class="employees__grup">
             <figure class="member-card">
-              <img src="./images/person3.jpg" alt="mężczyzna" width="270" height="260" />
+              <img srcset="./images/person3.jpg 1x,./images/person3@2x.jpg 2x" src="./images/person3.jpg"
+                alt="mężczyzna" class="member-card__foto" />
               <figcaption>
                 <p class="member-card__name">Jon Doe</p>
                 <p class="member-card__position">Marketing</p>
@@ -295,7 +299,8 @@
           </li>
           <li class="employees__grup">
             <figure class="member-card">
-              <img src="./images/person4.jpg" alt="brodaty mężczyzna z tatuażem" width="270" height="260" />
+              <img srcset="./images/person4.jpg 1x,./images/person4@2x.jpg 2x" src="./images/person4.jpg"
+                alt="brodaty mężczyzna z tatuażem" class="member-card__foto" />
               <figcaption>
                 <p class="member-card__name">Jon Doe</p>
                 <p class="member-card__position">UI Designer</p>
@@ -381,6 +386,7 @@
 
   <footer class="footer">
     <div class="container footer__flex">
+
       <div class="footer__flex-grup">
         <span class="logo logo--white"><span class="logo--blue">Web</span>Studio</span>
         <address>
@@ -394,6 +400,8 @@
           </p>
         </address>
       </div>
+
+
       <div class="footer__flex-grup">
         <p class="footer__title">DOŁĄCZ DO NAS</p>
         <ul class="company-socials">
@@ -423,6 +431,8 @@
           </li>
         </ul>
       </div>
+
+
       <div class="footer__flex-grup">
         <p class="footer__title--signup">ZAPISZ SIĘ DO NEWSLETTERA</p>
         <form name="newsletter_signup" autocomplete="on" novalidate class="newsletter">
@@ -435,75 +445,77 @@
             </svg></button>
         </form>
       </div>
+
     </div>
-  </footer> -->
+  </footer>
 
 
-    <div class="backdrop modal__hidden" data-modal>
-      <div class="modal">
-        <button type="button" class="modal__x-button" data-modal-close>
-          <svg class="modal__x-symbol">
-            <use class="" href="./images/symbol-defs.svg#icon-close-symbol"></use>
+
+  <div class="backdrop modal__hidden" data-modal>
+    <div class="modal">
+      <button type="button" class="modal__x-button" data-modal-close>
+        <svg class="modal__x-symbol">
+          <use class="" href="./images/symbol-defs.svg#icon-close-symbol"></use>
+        </svg>
+      </button>
+
+      <p class="modal__title">Zostaw swoje dane w formularzu poniżej</p>
+      <form class="modal__flex">
+
+        <label class="imput__subtitle">Imie
+          <input type="text" name="name" class="imput" placeholder="" />
+          <svg class="imput__svg">
+            <use href="./images/symbol-defs.svg#icon-person-form"></use>
           </svg>
-        </button>
+        </label>
 
-        <p class="modal__title">Zostaw swoje dane w formularzu poniżej</p>
-        <form class="modal__flex">
+        <label class="imput__subtitle">Telefon
+          <input type="tel" name="phone" class="imput" />
+          <svg class="imput__svg">
+            <use href="./images/symbol-defs.svg#icon-phone-form"></use>
+          </svg>
+        </label>
 
-          <label class="imput__subtitle">Imie
-            <input type="text" name="name" class="imput" placeholder="" />
-            <svg class="imput__svg">
-              <use href="./images/symbol-defs.svg#icon-person-form"></use>
-            </svg>
-          </label>
+        <label class="imput__subtitle">Email
+          <input type="email" name="email" class="imput" />
+          <svg class="imput__svg">
+            <use href="./images/symbol-defs.svg#icon-email-form"></use>
+          </svg>
+        </label>
 
-          <label class="imput__subtitle">Telefon
-            <input type="tel" name="phone" class="imput" />
-            <svg class="imput__svg">
-              <use href="./images/symbol-defs.svg#icon-phone-form"></use>
-            </svg>
-          </label>
+        <label class="imput__subtitle">Komentarz
+          <textarea name="coment" placeholder="Wprowadź tekst" class="imput__textbox"></textarea>
+        </label>
 
-          <label class="imput__subtitle">Email
-            <input type="email" name="email" class="imput" />
-            <svg class="imput__svg">
-              <use href="./images/symbol-defs.svg#icon-email-form"></use>
-            </svg>
-          </label>
-
-          <label class="imput__subtitle">Komentarz
-            <textarea name="coment" placeholder="Wprowadź tekst" class="imput__textbox"></textarea>
-          </label>
-
-          <div class="checkbox">
-            <div class="checkbox__hidden">
-              <input type="checkbox" name="consent" id="rule-checkbox" required class="checkbox__body" />
-              <label for="rule-checkbox" class="checkbox__label">
-                <svg class="checkbox__svg">
-                  <use href="./images/symbol-defs.svg#icon-checkmark"></use>
-                </svg>
-              </label>
-            </div>
-            <p class="rules">Oświadczam&nbsp;iż&nbsp;przeczytałem&nbsp;
-              <a class="rules__link" href="#">Regulamin</a>
-              &nbsp;i&nbsp;
-              <a class="rules__link" href="#">Politykę&nbsp;Prywatności.</a>
-            </p>
+        <div class="checkbox">
+          <div class="checkbox__hidden">
+            <input type="checkbox" name="consent" id="rule-checkbox" required class="checkbox__body" />
+            <label for="rule-checkbox" class="checkbox__label">
+              <svg class="checkbox__svg">
+                <use href="./images/symbol-defs.svg#icon-checkmark"></use>
+              </svg>
+            </label>
           </div>
+          <p class="rules">Oświadczam&nbsp;iż&nbsp;przeczytałem&nbsp;
+            <a class="rules__link" href="#">Regulamin</a>
+            &nbsp;i&nbsp;
+            <a class="rules__link" href="#">Politykę&nbsp;Prywatności.</a>
+          </p>
+        </div>
 
-          <button type="submit" class="modal__button button">Wyślij</button>
+        <button type="submit" class="modal__button button">Wyślij</button>
 
-        </form>
-      </div>
+      </form>
     </div>
+  </div>
 
 
 
-    <script src="./js/modal.js"></script>
-    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
-      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
-      crossorigin="anonymous"></script>
-    <script src="./js/mobile-menu.js"></script>
+  <script src="./js/modal.js"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+    crossorigin="anonymous"></script>
+  <script src="./js/mobile-menu.js"></script>
 </body>
 
 </html>
