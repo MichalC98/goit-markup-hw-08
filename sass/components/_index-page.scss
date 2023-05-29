@@ -70,7 +70,7 @@
 
 .sec-2__box {
     height: 226px;
-    width: 450px;
+    max-width: 450px;
     margin-bottom: 30px;
     
     &:last-child {
@@ -262,7 +262,7 @@
 
 
 .member-card__foto {
-    height: 460px;
+    height: auto;
     width: 450px;
 }
 @media (min-width: 768px) {
